@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jobpipe privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1f2328; --bg: #ffffff; --muted: #59636e; --link: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6edf3; --bg: #0d1117; --muted: #9198a1; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { margin: 0 0 4px; font-size: 32px; }
+  h2 { margin: 32px 0 8px; font-size: 20px; }
+  .sub { margin: 0 0 24px; color: var(--muted); }
+  a { color: var(--link); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>jobpipe privacy policy</h1>
+  <p class="sub">Effective November 5, 2026</p>
+
+  <p>jobpipe is a personal job-search tool. Its only user is its author, Teja Papadasu, who signs in with their own
+  Google account. This page explains what Google data it uses and what happens to it.</p>
+
+  <h2>Google data jobpipe uses</h2>
+  <ul>
+    <li><strong>Gmail, read-only.</strong> jobpipe reads only recent job-alert emails from the senders listed in its
+    settings, such as LinkedIn job alerts. From each, it takes the jobs' company, title, location and link. It never
+    sends, changes or deletes email, and it does not keep copies of emails.</li>
+    <li><strong>Google Drive, only its own files.</strong> jobpipe can see only the files it created itself: one
+    Google Sheet listing jobs and one folder of resume PDFs. It cannot see any other file in Drive.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Job details go into the owner's own Google Sheet, and draft resumes into the owner's own Drive folder.</li>
+    <li>To check how well a job fits and to draft a resume, jobpipe sends job details (company, title, and the
+    posting's text from the job's public page) to Anthropic's Claude, through the owner's own Claude account.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <p>In the owner's Google Sheet and Drive, plus a cache of job details and settings on the owner's computer and in
+  the owner's private GitHub repository. Google sign-in tokens are kept in the owner's local settings and as
+  encrypted GitHub Actions secrets.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not sold, not shared with anyone else, not used for advertising, and not used to train AI
+  models. jobpipe's use of information received from Google APIs follows the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Removing access</h2>
+  <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  The Sheet and folder jobpipe created can be deleted from Google Drive like any other file.</p>
+
+  <h2>Contact</h2>
+  <p>Teja Papadasu · <a href="https://github.com/TejaPapadasu">github.com/TejaPapadasu</a></p>
+
+  <p><a href="index.html">jobpipe home</a></p>
+</main>
+</body>
+</html>
